@@ -4,8 +4,6 @@ voting_data = [{"county":"Arapahoe", "registered_voters": 422829},
                    {"county":"Jefferson", "registered_voters": 432438}]
 
 while user_input == "y":
-    print(type(voting_data))
-    print(voting_data)
 
     for county in voting_data:
         print(f"{county['county']} county has {county['registered_voters']:,} registered voters.")
