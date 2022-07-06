@@ -1,5 +1,4 @@
 Counties in the Election
 -------------------------
-Arapahoe
-Denver
-Jefferson
+369,711
+['Charles Casper Stockham', 'Diana DeGette', 'Raymon Anthony Doane']
