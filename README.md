@@ -4,10 +4,14 @@
 A Colorado Board of Elections employee has given you the following tasks to complete the election audit of a recent local congressional election.
 
 1. Calculate the total number of votes cast.
-2. Get a complete list of candidates who received votes.
-3. Calculate the total number of votes each candidate received.
-4. Calculate the percentage of votes each candidate won.
-5. Determine the winner of the election based on popular vote.
+2. Get a complete list of counties that participated.
+3. Get a complete list of candidates who received votes.
+4. Calculate the total votes cast in each county.
+5. Calculate the percentage of total votes cast from each county.
+6. Calculate the total number of votes each candidate received.
+7. Calculate the percentage of votes each candidate won.
+8. Determine the county with the largest voter turnout.
+9. Determine the winner of the election based on popular vote.
 
 ## Resources
 - Data Source: election_results.csv
