@@ -48,6 +48,7 @@ election_results = (
     f"-"*25 + "\n"
     f"Total Votes: {total_votes:,}\n" + 
     f"-"*25 + "\n")
+print(election_results)
 
 # Write data analysis to the created file.
 # Files can be opened like this:
@@ -64,6 +65,7 @@ with open(file_to_save,"w") as txt_file:
         vote_percentage = float(votes) / float(total_votes) * 100
         # 4. Print the candidate name and percentage of votes:
         candidate_results = (f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})")
+        print(candidate_results)
         txt_file.write(candidate_results + "\n")
         # 5. Determine the winning candidate:
         if (votes > winning_count) and (vote_percentage > winning_percentage):
@@ -78,8 +80,4 @@ with open(file_to_save,"w") as txt_file:
         f"Winning Percentage: {winning_percentage:.1f}%\n" + 
         f"-"*25 + "\n")
     txt_file.write(winning_candidate_summary)
-
-
-# Close the file.
-# election_data.close()
-# outfile.close()
+    print(winning_candidate_summary)
