@@ -4,16 +4,17 @@
 #  as vowels
 #  the input string will consist of lower case letters
 
-count_the_vowels = input("Enter a word. Any word. Scrabble rules need not apply: ")
+def count_the_vowels(str):
+    str = input("Enter a word. Any word. Scrabble rules need not apply: ")
     # 1. Initialize a counter variable to keep track.
-count_vowels = 0
+    count_vowels = 0
 
     #2. Use a for loop to cycle through the letters in the string.
-for v in count_the_vowels:
-    if (v == 'a') or (v == 'e') or (v == 'i') or (v == 'o') or (v == 'u') or (v == 'A') or (v == 'E') or (v == 'I') or (v == 'O') or (v == 'U'):
-        count_vowels += 1
+    for v in str:
+        if (v == 'a') or (v == 'e') or (v == 'i') or (v == 'o') or (v == 'u') or (v == 'A') or (v == 'E') or (v == 'I') or (v == 'O') or (v == 'U'):
+            count_vowels += 1
     
-if count_vowels == 1:
-    print(f"There is {count_vowels} vowel in the 'word' you entered.")
-if count_vowels != 1:
-    print(f"There are {count_vowels} vowels in the 'word' you entered.")
+    if count_vowels == 1:
+        return(f"There is {count_vowels} vowel in the 'word' you entered.")
+    if count_vowels != 1:
+        return(f"There are {count_vowels} vowels in the 'word' you entered.")
